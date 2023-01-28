@@ -1,0 +1,61 @@
+*{
+    margin:  0;
+    padding: 0%;
+}
+
+.body{
+    height: 100vh;
+    width: 100vw;
+    background: url('image2.png');
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#board{
+    height: 900px;
+    width: 800px;
+    background-color: white;
+    border: 1px solid black;
+    overflow: hidden;
+}
+#pipe{
+    color: white;
+    height: 100%;
+    width: 40px;
+    background-color: black;
+    position: relative;
+    left: 300px;
+    animation: block 3s infinite linear;
+}
+@keyframes block{
+    0%{
+        left: 800px;
+    }
+    100%{
+        left: -50px;
+    }
+}
+#hole{
+    width: 40px;
+    height: 150px;
+    background-color: white;
+    position: relative;
+    left: 800px;
+    top: -350px;
+    animation: block 3s infinite linear;
+}
+#bird{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: red;
+    position: absolute;
+    top: 150px;
+}
+#score{
+    position: absolute;
+    top: 100px;
+    right: 60px;
+}
